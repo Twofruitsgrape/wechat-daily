@@ -5,6 +5,7 @@
   "type": "module",
   "description": "个人主体微信公众号的每日自动写作流水线：选题 → 写作 → 自检 → 封面 → 排版 → 草稿箱",
   "license": "MIT",
+  "author": "elice (https://github.com/Twofruitsgrape)",
   "repository": {
     "type": "git",
     "url": "https://github.com/Twofruitsgrape/wechat-daily.git"
