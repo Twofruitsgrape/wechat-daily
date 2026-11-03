@@ -1,0 +1,42 @@
+{
+  "name": "wechat-daily",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "个人主体微信公众号的每日自动写作流水线：选题 → 写作 → 自检 → 封面 → 排版 → 草稿箱",
+  "license": "MIT",
+  "keywords": [
+    "wechat",
+    "公众号",
+    "llm",
+    "automation",
+    "openai-compatible"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "setup:check": "node scripts/setup.mjs --check",
+    "selftest": "node scripts/selftest.mjs",
+    "daily": "node src/main.js",
+    "dry": "node src/main.js --dry-run",
+    "check": "node src/tools/check.js",
+    "whitelist": "node src/tools/whitelist.js",
+    "preview": "node src/tools/preview.js",
+    "cover": "node src/tools/cover.js",
+    "probe": "node src/tools/probe.js",
+    "probe:write": "node src/tools/probe.js --write",
+    "push": "node src/tools/push.js",
+    "bot": "node src/bot/aibot.js",
+    "ask": "node src/bot/ask.js",
+    "web": "node src/web/server.js"
+  },
+  "dependencies": {
+    "sharp": "^0.35.5",
+    "yaml": "^2.8.1"
+  },
+  "optionalDependencies": {
+    "@wecom/aibot-node-sdk": "^1.0.7"
+  }
+}
