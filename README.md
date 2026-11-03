@@ -245,11 +245,23 @@ wechat-daily/
 
 ---
 
-## 说明
+## 说明与参考
 
-本项目由 elice 维护。早期版本来自作者个人使用的一个小原型，之后在选题、写作、自检、排版、
-封面、草稿箱、机器人、文献配图等模块上做了较大改动和重写。排版参数参考了机器之心、可能吧
-等公众号的公开文章。
+本项目由 elice 维护，是独立实现：选题、写作、自检、排版、封面、草稿箱、机器人、文献配图
+等模块都在个人使用中持续迭代，没有直接复制其他项目的代码。
+
+设计阶段调研过下面这些同类项目，产品形态上受它们启发，特此致谢：
+
+| 项目 | 它做了什么 |
+|---|---|
+| [jiji262/wechat-publisher](https://github.com/jiji262/wechat-publisher) | 选题 → 写作 → 配图 → 微信排版 → 草稿箱，可作为 agent Skill 调用；与本项目链路最接近 |
+| [16Miku/wechat-auto-publishing](https://github.com/16Miku/wechat-auto-publishing) | 把「API 建草稿 + 人工发表」沉淀成可复现工作流，强调个人主体不要默认 freepublish |
+| [liyown/ai-trend-publish](https://github.com/liyown/ai-trend-publish) | TrendPublish：从选题、排序、写作到草稿箱的全流程系统 |
+| [TongTong313/wechat-ai-daily](https://github.com/TongTong313/wechat-ai-daily) | 采集公众号文章 → LLM 筛选 → 生成的日报式流水线 |
+
+微信排版参数另参考了机器之心、可能吧等公众号的公开文章。
+
+以上仅表示设计调研与启发，不代表代码来源；本项目未复制上述项目的代码。
 
 ## 从旧版本迁移
 
